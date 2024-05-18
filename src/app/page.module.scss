@@ -36,7 +36,10 @@ $mainFont: "Josefin sans", sans-serif;
                 font-weight: 200;
             }
         }
-        img{
+        .Image{
+            position: relative;
+            margin: 0 auto;
+            height: 120px;
             width:  120px;
         }
         .buttonList{
@@ -82,8 +85,9 @@ $mainFont: "Josefin sans", sans-serif;
                 }
                 
             }
-            img{
-                width: 10vw;
+            .Image{
+                width: 25vw;
+                height: 25vh;
             }
             .buttonList{
                 width: 80%;

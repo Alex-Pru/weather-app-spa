@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.scss'
-
+import Image from 'next/image';
 
 export default function Home() {
   const cities: string[] = ['Dallol', 'Fairbanks', 'London', 'Recife', 'Vancouver', 'Yakutsk']
@@ -12,7 +12,9 @@ export default function Home() {
             <h1>WEATHER</h1>
             <p className={styles.subtitle}>select a city</p>
           </article>
-      <img src="/world.svg" />
+        <div className={styles.Image}>
+      <Image src="/world.svg" alt="" fill objectFit='contain'/>
+      </div>
         </section>
         <section className={styles.buttonList}>
           {cities.map((city) => (

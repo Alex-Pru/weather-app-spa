@@ -3,6 +3,7 @@ import styles from './page.module.scss'
 import { CurrentWeatherService } from '@/app/services/CurrentWeatherService'
 import { ForecastWeatherService } from '@/app/services/ForecastWeatherService'
 import { InformationFormatterService } from '@/app/services/InformationFormatterService'
+import Image from 'next/image'
 
 interface Props{
     params: {cityName: string}
@@ -86,7 +87,9 @@ export default async function Weather({params}: Props){
     }
 
     return <main className={`${styles.main} ${getDinamicColors(cityWeatherInfo.condition)}`}>
-            <Link href='../' className={styles.returnButton} ><img src='/left-arrow.svg'></img></Link>
+                <Link href='../' className={styles.returnButton} >
+                    <Image src='/left-arrow.svg' alt='' width={30} height={30} />
+                </Link>
         <div className={styles.container}>
                 <article className={styles.header}>
                     <h1>
@@ -104,12 +107,12 @@ export default async function Weather({params}: Props){
                     </div>
                     </div>
                 </article>
-                <img src={cityWeatherInfo.icon} className={`${styles.icon} ${styles.mainIcon}`}></img>
+                <img alt='' src={cityWeatherInfo.icon} className={`${styles.icon} ${styles.mainIcon}`}></img>
                     <div className={styles.timeStampContainer}>
                         {timestampWeather.map((period) => (
                             <div key={period.name}>
                                 <p>{period.name}</p>
-                                <img src={period.icon} className={styles.icon}></img>
+                                <img alt='' src={period.icon} className={styles.icon}></img>
                                 <span>{period.temperature}°C</span>
                             </div>
                         ))}

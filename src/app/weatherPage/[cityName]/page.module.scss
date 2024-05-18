@@ -43,16 +43,14 @@ $iconFilterBlack: invert(0%) sepia(94%) saturate(1588%) hue-rotate(237deg) brigh
     justify-content: center;
     font-family: $mainFont;
     overflow-x: hidden;
-    .returnButton{
-        position: absolute;
-        padding-left: 20px;
-        padding-top: 20px;
-        left: 0;
-        top: 0;
-        img{
-            width: 30px;
-        }
-    }
+            .returnButton{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding-top: 30px;
+                padding-left: 30px;
+            }
+    
     .container{
         width: 90%;
         max-width: 400px;
@@ -161,11 +159,7 @@ $iconFilterBlack: invert(0%) sepia(94%) saturate(1588%) hue-rotate(237deg) brigh
 
 @media (min-width: 500px), handheld and (orientation: landscape) {
     .main{
-        .returnButton{
-            img{
-                width: 5vw;
-            }
-        }
+        
         .container{
             margin-top: 100px;
             width: 80%;
