@@ -11,8 +11,8 @@ const nextConfig = {
         includePaths: [path.join(__dirname, 'styles')],
       },
       env:{
-        APIURLCURRENT: 'http://api.weatherapi.com/v1/current.json?key=4c44676bdb744c149f134258241605&q=',
-        APIURLFORECAST: 'http://api.weatherapi.com/v1/forecast.json?key=4c44676bdb744c149f134258241605&q='
+        APIURLCURRENT: 'http://api.weatherapi.com/v1/current.json?key=<yourtokenhere>&q=',
+        APIURLFORECAST: 'http://api.weatherapi.com/v1/forecast.json?key=<yourtokenhere>&q='
       }
 };
 
