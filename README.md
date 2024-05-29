@@ -1,4 +1,5 @@
 # Weather App ![Brazil](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/br.png "Brazil")
+
 (Scroll down to reach the english version of the Readme.)<br>
 
 Este aplicativo tem como objetivo mostrar a previsão do tempo para as cidades disponíveis no mesmo, ele foi criado com React, NextJS, SASS, TypeScript e sua interface foi pensada para Mobile.
@@ -8,6 +9,7 @@ Este aplicativo tem como objetivo mostrar a previsão do tempo para as cidades d
 Este app utiliza a API de nome 'Weather api' <https://www.weatherapi.com/> que pode nos mandar informações do clima tanto no dia que estamos, quanto nos próximos 14 dias. É uma API muito bem feita e recomendo para usarem em seus projetos.
 
 ### Frontend 📱
+
 <div align=center text-align=left>
 Ao iniciar a página, você verá esta tela, cada botão te destinará a um país diferente. <br>
   
@@ -17,16 +19,30 @@ Ao selecionar uma cidade, as informações climáticas da mesma serão exibidas 
 ![WhatsApp Image 2024-05-18 at 21 07 13](https://github.com/Alex-Pru/weather-app-spa/assets/142506709/6ff8b8a0-5f8c-4311-b394-3cf2405fd846) <br>
 Exemplo de clima ensolarado: <br>
 ![WhatsApp Image 2024-05-18 at 21 08 56](https://github.com/Alex-Pru/weather-app-spa/assets/142506709/5a347e76-411e-42aa-a1ad-68a0ab7f63ef)
+
 </div>
 
+### Testes 🔧
+
+Para executar os testes, digite o comando:
+
+```
+npm run test
+```
+
 # Como baixar?
+
 Para baixar o projeto em sua máquina, digite os comandos:
+
 ```
 git clone https://github.com/Alex-Pru/weather-app-spa.git
 cd weather-app-spa
 ```
+
 Após realizar isso, os arquivos do projeto serão exibidos, porém, para que o projeto funcione nos passos a seguir, é necessário que você faça um pequeno ajuste: <br>
+
 ### Configurando a API 🗝️
+
 A api precisa de uma chave para poder ser acessada, para membros Free (ou gratuito) essa chave tem uma validade de 30 dias e para prosseguir utilizando depois desse período, é necessário pagar. <br>
 Como iremos apenas testar o projeto, não precisamos pagar. Primeiramente, vá para o site da API: <https://www.weatherapi.com/> e clique em "sign up", então, cadastre-se e confirme sua inscrição com o e-mail recebido na caixa de e-mail de sua escolha. <br> <br>
 
@@ -43,11 +59,14 @@ No arquivo "next.config.mjs", troque o que está dentro dos símbolos de "<>" (a
 ![image](https://github.com/Alex-Pru/weather-app-spa/assets/142506709/0999a2f3-d5a7-4408-99b4-defe40ae2676)
 
 # Como Rodar?
+
 Agora, para instalar e fazer o projeto funcionar em sua máquina, digite os seguintes comandos na pasta raiz do projeto:
+
 ```
 npm install
 npm run dev
 ```
+
 Ao executar estes comandos, o projeto deve iniciar corretamente no endereço: <http://localhost:3000/><br>
 
 Agradeço a atenção!
@@ -83,10 +102,12 @@ Example of sunny weather: <br>
 # How to Download?
 
 To download the project to your machine, enter the following commands:
+
 ```
 git clone https://github.com/Alex-Pru/weather-app-spa.git
 cd weather-app-spa
 ```
+
 After doing this, the project files will be displayed, but for the project to function in the following steps, you need to make a small adjustment: <br>
 
 ### Configurin the API
@@ -111,10 +132,12 @@ In the "next.config.mjs" file, replace what is inside the "<>" symbols (also del
 # How to run?
 
 Now, to install and run the project on your machine, enter the following commands in the root folder of the project:
+
 ```
 npm install
 npm run dev
 ```
+
 By executing these commands, the project should start correctly at the address: http://localhost:3000/<br>
 
 Thank you for your attention!
